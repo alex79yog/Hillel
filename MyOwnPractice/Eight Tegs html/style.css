@@ -1,0 +1,27 @@
+body {
+    padding: 40px 40px 40px 40px;
+    background-color: rgb(201, 245, 230);
+    border: 20px 20px 20px 20px;
+    border-radius: 5px;
+    border-style: double ;
+}
+element.style {
+    width: 300px;
+    margin: auto;
+    padding: 1rem;
+    background-color: aqua;
+}
+
+dialog {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: fit-content;
+}
+
+
+element::backdrop {
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 21px;
+}

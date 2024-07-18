@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="..MyOwnPractice/style.css">
+    <title>My Own practice</title>
+
+    <style>
+        dialog::backdrop {
+            background: rgba(0, 0, 0, 0.5)
+        }
+
+        dialog {
+            max-width: 400px;
+            border: 5px double #144790de;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<header>
+    <h1 style="font-size: 22px;">Home</h1>
+</header>
+
+<body>
+    <div>
+        <input type="text" list="tech" style="color: rgb(27, 19, 118);">
+
+        <datalist id="tech">
+            <option value="11"></option>
+            <option value="22"></option>
+            <option value="33"></option>
+            <option value="44"></option>
+            <option value="55"></option>
+            <option value="66"></option>
+        </datalist>
+        <br>
+
+        <p>H<sub>2</sub>O</p>
+
+        <p>E=MC<sup>2</sup></p>
+
+    </div>
+
+    <details>
+        <summary>Ты точно захочешь меня открыть</summary>
+        <p> И что же ты хотел увидель здесь?</p>
+    </details>
+    <hr>
+    <button id="open">Show modal</button>
+
+    <dialog>
+        <h2>Заголовок</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, doloribus? Culpa natus magnam,
+            aperiam
+            animi quaerat sapiente voluptatem vero accusantium, fugit, iste reprehenderit eaque. Dignissimos
+            voluptate
+            rem quisquam nobis architecto.
+        </p>
+        <button>Close</button>
+    </dialog>
+
+
+    <script>
+        const openBtn = document.querySelector
+            ('#open')
+        const dialog = document.querySelector
+            ('dialog')
+        const closeBtn = dialog.querySelector
+            ('button')
+
+        openBtn.onclick = () => dialog.
+            showModal()
+
+        closeBtn.onclick = () => dialog.close()
+    </script>
+
+    <figure>
+        <img src="../Lesson.3/images/17125715_300.jpg" height="100" width="100" alt="">
+        <figcaption style="font-weight: bold; font-size: 2rem;">
+            This is random pic
+        </figcaption>
+    </figure>
+    <picture>
+        <source 
+        media="(min-width: 900px)" 
+        srcset="../Lesson.3/images/17125715_600.jpg" 
+        height="400" width="400"/>
+
+        <source 
+        media="(max-width: 500px)" 
+        srcset="../Lesson.3/images/17125715_600.jpg" 
+        height="100" width="100"/>
+
+        <img src="../Lesson.3/images/17125715_600.jpg" height="200" width="200" alt=""/>
+    </picture>
+
+
+</body>
+
+</html>
