@@ -13,4 +13,7 @@ html, body {
 .swiper {
 	height: 100%;
 }
-
+.slider__layer {
+	position: absolute;
+	inset: 0;
+}
