@@ -1,22 +1,30 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
-	background-color: #2B474B;
-	color: rgb(241, 245, 245);
+html,
+body {
+  height: 100%;
+  background-color: #2b474b;
+  color: rgb(241, 245, 245);
 }
 
 .swiper {
-	height: 100%;
+  height: 100%;
 }
-.slider__layer {
-	position: absolute;
-	inset: 0;
-	background-size: cover;
-	background-position: center;
 
+.slider__layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+.slider__item {
+  overflow: hidden;
+  transform: scale(25);
+  
 }
