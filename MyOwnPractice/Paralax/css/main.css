@@ -29,6 +29,7 @@ body {
   transition: 2s ease!important;
 }
 
-.slider__item:not(.swiper-slide-active) {
-	transform: scale(1)!important;
+.slider-ui {
+	position:absolute;
+	
 }
